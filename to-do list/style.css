@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+
+  /* 💜 Fundo pastel */
+  background: linear-gradient(135deg, #e9d9ff, #f6e9ff);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: #3a2a4d;
+}
+
+.todo-app {
+  width: 360px;
+
+  /* 💗 Caixa clara */
+  background: rgba(255, 245, 255, 0.95);
+
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 0 15px rgba(180, 130, 255, 0.35);
+}
+
+header h1 {
+  margin: 0;
+  color: #a974ff;
+  text-align: center;
+}
+
+header p {
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+
+  background: #f0e4ff;
+  color: #3a2a4d;
+}
+
+.input-area button {
+  width: 42px;
+  border: none;
+  border-radius: 8px;
+
+  background: #c9a3ff;
+  color: #fff;
+
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.input-area button:hover {
+  background: #b88cff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+li {
+  background: #f4ecff;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: 0.2s;
+}
+
+li:hover {
+  background: #eadcff;
+}
+
+li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions span {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.actions .delete {
+  color: #ff9acb;
+}
